@@ -1,0 +1,52 @@
+.container {
+    position: relative;
+    min-width: 183px;
+}
+
+.selector {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.selectorText {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.options {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    background-color: var(--color-background);
+    border-radius: 16px;
+    min-width: 183px;
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    right: 0;
+    top: 30px;
+    z-index: 1;
+}
+
+.option:hover {
+    color: var(--color-text-accent);
+}
+
+.sans {
+    font-family: 'Inter', sans-serif;
+}
+
+.serif {
+    font-family: 'Merriweather', serif;
+}
+
+.mono {
+    font-family: 'Fira Code', monospace;
+}

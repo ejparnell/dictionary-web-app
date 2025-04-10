@@ -1,0 +1,53 @@
+@import './variables.css';
+@import './typography.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-background: var(--white);
+    --color-text-primary: var(--grey-800);
+    --color-text-secondary: var(--grey-400);
+    --color-text-accent: var(--purple);
+    --color-input-background: var(--grey-200);
+    --color-input-placeholder: var(--grey-800);
+    --color-hr: var(--grey-300);
+}
+
+[data-theme='dark'] {
+    --color-background: var(--black);
+    --color-text-primary: var(--white);
+    --color-input-background: var(--grey-900);
+    --color-input-placeholder: var(--white);
+    --color-hr: var(--grey-700);
+}
+
+[data-font='sans'] {
+    --font-family-current: var(--font-family-sans);
+}
+
+[data-font='serif'] {
+    --font-family-current: var(--font-family-serif);
+}
+
+[data-font='mono'] {
+    --font-family-current: var(--font-family-mono);
+}
+
+body {
+    font-family: var(--font-family-current);
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+}

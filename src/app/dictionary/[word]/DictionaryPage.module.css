@@ -1,0 +1,112 @@
+.phonetics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.phoneticsWord {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.phoneticsText {
+    color: var(--purple);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.partsOfSpeech {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.line {
+    border-bottom: 1px solid var(--color-hr);
+    flex-grow: 1;
+    height: 1px;
+}
+
+.meaningHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.meaning {
+    font-size: 16px;
+    color: var(--grey-400);
+    margin: 0 20px 20px 0;
+}
+
+.meaningUl {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.meaningLi {
+    font-size: 16px;
+    line-height: 24px;
+    text-indent: -1em;
+    padding-left: 1em;
+    margin-bottom: 10px;
+    color: var(--color-text-primary);
+}
+
+.meaningLi::marker {
+    color: var(--purple);
+}
+
+.san {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.sanTitle {
+    font-size: 16px;
+    color: var(--grey-400);
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.meanings {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.example {
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--grey-400);
+    margin: 10px 0 0 22px;
+}
+
+.source {
+    text-decoration: underline;
+    color: var(--color-text-secondary);
+    margin: 20px 0 10px 0;
+}
+
+.sourceUrl {
+    color: var(--color-text-primary);
+}
+
+.sourceIcon {
+    margin-left: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .phoneticsWord {
+        font-size: 64px;
+    }
+
+    .phoneticsText {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}

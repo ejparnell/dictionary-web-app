@@ -1,0 +1,24 @@
+.headingLg {
+    font-size: var(--heading-lg-font-size);
+    line-height: var(--heading-lg-line-height);
+}
+
+.headingMd {
+    font-size: var(--heading-md-font-size);
+    line-height: var(--heading-md-line-height);
+}
+
+.headingSm {
+    font-size: var(--heading-sm-font-size);
+    line-height: var(--heading-sm-line-height);
+}
+
+.bodyMd {
+    font-size: var(--body-md-font-size);
+    line-height: var(--body-md-line-height);
+}
+
+.bodySm {
+    font-size: var(--body-sm-font-size);
+    line-height: var(--body-sm-line-height);
+}

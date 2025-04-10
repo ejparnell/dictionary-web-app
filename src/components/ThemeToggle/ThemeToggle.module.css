@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle {
+    height: 20px;
+    width: 40px;
+    position: relative;
+    border-radius: 10px;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+.toggleBackgroundLight {
+    background-color: var(--grey-400);
+}
+
+.toggleBackgroundDark {
+    background-color: var(--purple);
+}
+
+.slider {
+    background-color: var(--white);
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+}
+
+.sliderRight {
+    transform: translateX(20px);
+}
+
+.sliderLeft {
+    transform: translateX(0);
+}
+
+.iconDark {
+    filter: invert(42%) sepia(57%) saturate(6306%) hue-rotate(256deg) brightness(95%) contrast(95%);
+}

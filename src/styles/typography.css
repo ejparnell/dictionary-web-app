@@ -1,0 +1,12 @@
+:root {
+    --heading-lg-font-size: 64px;
+    --heading-lg-line-height: 77px;
+    --heading-md-font-size: 24px;
+    --heading-md-line-height: 29px;
+    --heading-sm-font-size: 20px;
+    --heading-sm-line-height: 24px;
+    --body-md-font-size: 18px;
+    --body-md-line-height: 24px;
+    --body-sm-font-size: 14px;
+    --body-sm-line-height: 17px;
+}
