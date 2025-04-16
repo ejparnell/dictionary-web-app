@@ -124,8 +124,8 @@ export default async function DictionaryPage({ params }: DictionaryPageProps) {
             <section>
                 <div className={styles.line} />
 
-                <p className={`${textStyles.bodySm} ${styles.source}`}>Source</p>
-                <div>
+                <div className={styles.sourceContainer}>
+                    <p className={`${textStyles.bodySm} ${styles.source}`}>Source</p>
                     {sourceUrl.map((url, index) => (
                         <a
                             key={index}

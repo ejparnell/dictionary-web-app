@@ -26,9 +26,11 @@ export default function RootLayout({
     return (
         <html lang='en'>
             <body className={mono.variable}>
-                <ThemeProvider>
-                    <SearchHeader />
-                    {children}
+                <ThemeProvider> 
+                    <div className='dictionary'>
+                        <SearchHeader />
+                        {children}
+                    </div>
                 </ThemeProvider>
             </body>
         </html>

@@ -11,10 +11,10 @@ import ThemeToggle from '../ThemeToggle';
 
 export default function SearchHeader() {
     const { width } = useWindowSize();
-    const router = useRouter(); 
+    const router = useRouter();
     const [word, setWord] = useState('');
     const [error, setError] = useState<boolean | null>(null);
-    
+
     const LOGO_SIZE = width && width > 768 ? 36 : 32;
 
     const handleSearch = (event: React.FormEvent) => {
@@ -28,17 +28,12 @@ export default function SearchHeader() {
         if (word.trim()) {
             router.push(`/dictionary/${word}`);
         }
-    }
+    };
 
     return (
         <header>
             <div className={styles.controlsContainer}>
-                <Image
-                    src='/assets/images/logo.svg'
-                    alt='Dictionary Logo'
-                    width={LOGO_SIZE}
-                    height={LOGO_SIZE}
-                />
+                <Image src='/assets/images/logo.svg' alt='Dictionary Logo' width={LOGO_SIZE} height={LOGO_SIZE} />
 
                 <div className={styles.controls}>
                     <FontSelector />
@@ -48,5 +43,5 @@ export default function SearchHeader() {
             </div>
             <SearchForm error={error} handleSubmit={handleSearch} word={word} setWord={setWord} />
         </header>
-    )
+    );
 }

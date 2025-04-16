@@ -51,3 +51,15 @@ body {
         padding: 40px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    body {
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dictionary {
+        max-width: 736px;
+    }
+}
