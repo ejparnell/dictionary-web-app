@@ -57,7 +57,7 @@ Dark Mode:
 
 ### Links
 
-- Solution URL: [Repository Hosted on GitHub]()
+- Solution URL: [Repository Hosted on GitHub](https://github.com/ejparnell/dictionary-web-app)
 - Live Site URL: [Deployed on Netlify]()
 
 ## My process

@@ -4,7 +4,7 @@ import textStyles from '@/styles/presets/TextPresets.module.css';
 import Image from 'next/image';
 
 interface DictionaryPageProps {
-    params: { word: string };
+    params: Promise<{ word: string }>;
 }
 
 export default async function DictionaryPage({ params }: DictionaryPageProps) {
