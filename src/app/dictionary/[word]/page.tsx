@@ -15,7 +15,7 @@ export default async function DictionaryPage({ params }: DictionaryPageProps) {
     });
 
     if (!response.ok) {
-        throw new Error('Failed to fetch data');
+        throw new Error(`No definitions found for "${word}"`);
     }
 
     interface Meaning {
@@ -42,8 +42,6 @@ export default async function DictionaryPage({ params }: DictionaryPageProps) {
     const phonetics = wordData.phonetics;
     const meanings = wordData.meanings;
     const sourceUrl = wordData.sourceUrls;
-
-    console.log('Word Data:', wordData);
 
     const findPheneticText = () => {
         const phoneticText = phonetics.find((phonetic) => phonetic.audio && phonetic.text);
